@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'todo',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#login / logout
+
+LOGIN_REDIRECT_URL = '/todo' #로그인 후에 리스트 페이지 이동
+LOGOUT_REDIRECT_URL = '/accounts/login' # 로그아웃 시 로그인 화면으로 이동
