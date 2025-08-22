@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'django_summernote',
+    'django_cleanup',
     'todo',
     'users',
 ]
